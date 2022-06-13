@@ -3,9 +3,26 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="黑客工作室官网，优良的服务，高级的产品，NB的教程，拒绝非法内容">
-        <meta name="">
-    </head>
+        <script src="Bmob.js"></script>
+        <script>
+            Bmob.initialize("1bc4f23c00867a5d", "102466");  
+            Bmob.Debug(true)
+            function login(){
+                Bmob.User.login(document.getElementById("name").value,document.getElementById("pwd").value).then(res => {
+               alert("OK!")
+             }).catch(err => {
+                 alert("用户名或密码出错，请检查！")
+            });
+            }
+            
+        </script>
+    </head> 
     <body>
+        <p>
+            名字:<input  id="name"><br><br>
+            密码:<input id="pwd"><br><br>
+            <button onclick="login()">登录</button>
+        </p>
         <a href="register.html">注册</a>
     </body>
 </html>
