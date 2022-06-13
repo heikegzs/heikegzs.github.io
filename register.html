@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="黑客工作室官网，优良的服务，高级的产品，NB的教程，拒绝非法内容">
+        <meta name="">
+        <script src="Bmob.js"></script>
+        <script>
+            Bmob.initialize("1bc4f23c00867a5d", "102466");  
+            Bmob.Debug(true)
+            function register(){
+                let params = {
+                    username: document.getElementById("name"),
+                    password: document.getElementById("pwd"),
+                    email: document.getElementById("email"),
+                    phone: document.getElementById("phone"),
+                }
+                Bmob.User.register(params).then(res => {
+                    location.href = "index.html";
+                  console.log(res)
+                }).catch(err => {
+                 alert(err.error);
+                }); 
+            }
+        </script>
+    </head> 
+    <body>
+        <p>
+            name:<input  id="name"><br><br>
+            password:<input id="pwd"><br><br>
+            email:<input id="email"><br><br>
+            phone:<input  id="phone"><br><br>
+            <button onclick="register()">register</button>
+        </p>
+        
+    </body>
+</html>
