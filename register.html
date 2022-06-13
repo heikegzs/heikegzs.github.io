@@ -10,10 +10,10 @@
             Bmob.Debug(true)
             function register(){
                 let params = {
-                    username: document.getElementById("name"),
-                    password: document.getElementById("pwd"),
-                    email: document.getElementById("email"),
-                    phone: document.getElementById("phone"),
+                    username: document.getElementById("name").value,
+                    password: document.getElementById("pwd").value,
+                    email: document.getElementById("email").value,
+                    phone: document.getElementById("phone").value,
                 }
                 Bmob.User.register(params).then(res => {
                     location.href = "index.html";
