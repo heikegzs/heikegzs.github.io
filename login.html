@@ -3,6 +3,30 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="黑客工作室官网，优良的服务，高级的产品，NB的教程，拒绝非法内容">
+        <meta name="description" content="黑客工作室官网，为您提供绝佳的服务，目前处于测试版，网页不稳定，不是测试人员请勿进入！">
+        <link rel="icon" href="ico.png">
+        <style>
+            main{
+                text-align: center;
+            }
+        </style>
+        <style>
+            header{
+                background-color: black;
+            }
+            h1{
+                text-align: center;
+                color: white;
+            }
+            h1.mid{
+                text-align: center; 
+                color: black;
+            }
+            a{
+                color: white;
+            }
+        </style> 
+    </head> 
         <script src="Bmob.js"></script>
         <script>
             Bmob.initialize("1bc4f23c00867a5d", "102466");  
@@ -16,11 +40,25 @@
             }
             
         </script>
+        <noscript>
+            <p>都什么年代了，还不支持JavaScript!还不赶紧支持JavaScript!</p><br>
+            <a href="https://www.microsoft.com/zh-cn/edge?r=1">浏览器不支持的点我！</a>            
+        </noscript>
     </head> 
     <body>
-        名字:<input  id="name"><br><br>
+        <header>
+            <h1>黑客工作室——Hacker_studio</h1>
+            <a target="_blank">产品内容 </a>
+            <a target="_blank">了解我们 </a>
+            <a target="_blank">购买服务 </a>
+            <a href="login.html" target="_blank">登录 </a>
+        </header>
+        <main>
+            名字:<input  id="name"><br><br>
         密码:<input id="pwd"><br><br>
-        <button onclick="login()">登录</button>
+        <button onclick="login()">登录</button><br>
         <a href="register.html">注册</a>
+        </main>
+        
     </body>
 </html>
