@@ -16,8 +16,9 @@
                     phone: document.getElementById("phone").value,
                 }
                 Bmob.User.register(params).then(res => {
+                    alert("Ok");
                     location.href = "index.html";
-                  console.log(res)
+                 
                 }).catch(err => {
                  alert(err.error);
                 }); 
@@ -26,10 +27,10 @@
     </head> 
     <body>
         <p>
-            name:<input  id="name"><br><br>
-            password:<input id="pwd"><br><br>
-            email:<input id="email"><br><br>
-            phone:<input  id="phone"><br><br>
+            名字:<input  id="name"><br><br>
+            密码:<input id="pwd"><br><br>
+            邮箱:<input id="email"><br><br>
+            手机号:<input  id="phone"><br><br>
             <button onclick="register()">register</button>
         </p>
         
