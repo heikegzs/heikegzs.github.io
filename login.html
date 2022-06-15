@@ -30,10 +30,12 @@
         <script src="Bmob.js"></script>
         <script>
             Bmob.initialize("1bc4f23c00867a5d", "102466");  
-            Bmob.Debug(true)
+            Bmob.User.current().then(result => {
+                      Bmob.User.logout()
+                    })
             function login(){
                 Bmob.User.login(document.getElementById("name").value,document.getElementById("pwd").value).then(res => {
-               alert("OK!")
+               location.href = "index.html"
              }).catch(err => {
                  alert("用户名或密码出错，请检查！")
             });
