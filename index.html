@@ -8,12 +8,15 @@
         <link rel="icon" href="ico.png">
         <link rel="stylesheet" href="yinyong.css">
         <script src="Bmob.js"></script>
-        <script>
-            
-        </script>
         <style>
+            footer{
+                background-color: gray;
+                text-align: center;
+                color: white;
+            }
             header{
-                background-color: black;
+                background-color: gray;
+                text-align: center;
             }
             h1{
                 text-align: center;
@@ -31,30 +34,27 @@
     <body>
         <header>
             <h1>黑客工作室——Hacker_studio</h1>
-            <a target="_blank">产品内容 </a>
             <a target="_blank">了解我们 </a>
+            <a target="_blank">官方产品 </a>
+            <a target="_blank">博主上传 </a>
             <a target="_blank">购买服务 </a>
-            <a href="login.html" target="_blank">登录 </a>
+            <a href="login.html" target="_blank" id="dl">登录 </a>
+            <script>
+                Bmob.initialize("1bc4f23c00867a5d", "102466");  
+                let current = Bmob.User.current()
+                alert(current)
+            </script>
         </header>
+        
         <main>
             <h1 class="mid">黑客工作室，你值得信赖！</h1>
-            <!-- <blockquote cite="https://heikegzs.github.io/">
-                <p>
-                    <abbr title="嗨嗨嗨，羡慕吧~~~">bababba</abbr>bsklc
-                    uanfvnuiortn<br>
-                    dhfhrhthtyjrjuy<br>
-                    yhrtunethtyehteh<br>
-                    eyhneryhethtyejrt<br>
-                    wryjryujkryujrtjuryk<br>
-                    wrtjrtyuktuik6uoiltukrgujryuiol<br>
-                    uanfvnuiortn<br>
-                    dhfhrhthtyjrjuy<br>
-                    yhrtunethtyehteh<br>
-                    eyhneryhethtyejrt<br>
-                    wryjryujkryujrtjuryk<br>
-                    wrtjrtyuktuik6uoiltukrgujryuiol
-                </p>
-            </blockquote> -->
+            <p>在这里，你可以自己上传文件，也可以下载别人的文件</p>
+            <p>我们虽然叫<s>黑客</s>工作室(<s>Hacker</s>_studio),但不会干那些<strong>违法乱纪</strong>的事 </p>
+
         </main>
+        <footer>
+            Copyright (C) 2022 Hacker_studio <br>
+            本网站一切解释归黑客工作室(Hacker_studio)所有！ 
+        </footer>
     </body>
 </html>
